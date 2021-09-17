@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity"
+    android:background="@drawable/background_form"
+    >
+
+    <CheckBox
+        android:id="@+id/checkBoxMorron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:buttonTint="@color/blueOne"
+        android:text="@string/morron"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxTomate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCebolla" />
+
+    <ImageView
+        android:id="@+id/imagePizza"
+        android:layout_width="399dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/png_pizza" />
+
+    <EditText
+        android:id="@+id/textReceta"
+        android:layout_width="231dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blueOne"
+        android:ems="10"
+        android:hint="Nombre de la nueva receta"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHighlight="@color/blueOne"
+        android:textColorLink="@color/blueOne"
+        android:textCursorDrawable="@color/blueOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePizza" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPrincipal"
+        android:layout_width="357dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textReceta">
+
+        <RadioButton
+            android:id="@+id/radioButtonCarne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/blueOne"
+            android:checked="true"
+
+            android:text="@string/carne" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPollo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/blueOne"
+            android:text="@string/pollo" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/blueOne"
+            android:text="@string/mix" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupBase"
+        android:layout_width="357dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupPrincipal">
+
+        <RadioButton
+            android:id="@+id/radioButtonBaseRoja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/blueOne"
+            android:checked="true"
+            android:text="@string/baseRoja" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBaseBlanca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/blueOne"
+            android:text="@string/baseBlanca" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBoxCherry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:buttonTint="@color/blueOne"
+        android:text="@string/cherry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxChampinion"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupBase" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCebolla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:buttonTint="@color/blueOne"
+        android:checked="false"
+        android:text="@string/cebolla"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxChampinion"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupBase" />
+
+    <CheckBox
+        android:id="@+id/checkBoxChampinion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:buttonTint="@color/blueOne"
+        android:text="@string/champinion"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxCherry"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxCebolla"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupBase" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTomate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:buttonTint="@color/blueOne"
+        android:text="@string/tomate"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxPalta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMorron"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxChampinion" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAlbaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:buttonTint="@color/blueOne"
+        android:text="@string/albaca"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxOregano"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxAjo"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTomate" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOregano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:buttonTint="@color/blueOne"
+        android:text="@string/oregano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxAlbaca"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPalta" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPalta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:buttonTint="@color/blueOne"
+        android:text="@string/palta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTomate"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCherry" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAjo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:buttonTint="@color/blueOne"
+        android:checked="false"
+        android:text="@string/ajo"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxAlbaca"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMorron" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/ingredientePrincipal"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textReceta" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/tipoBase"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textReceta" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:text="@string/ingredientes"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textReceta" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="372dp"
+        android:text="@string/alinios"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textReceta" />
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="27dp"
+        android:onClick="saveInfo"
+        android:text="@string/guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAlbaca" />
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="20dp"
+        android:onClick="goHome"
+        android:text="@string/volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAjo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

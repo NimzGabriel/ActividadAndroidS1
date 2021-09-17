@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Pizza recetas</string>
+    <string name="title">Bienvenido</string>
+    <string name="titleTwo">¿Qué desea hacer?</string>
+    <string name="buttonNuevaReceta">Crear nueva receta</string>
+    <string name="buttonVerRecetas">Ver las recetas</string>
+    <string name="salir">Salir</string>
+    <string name="carne">Carne</string>
+    <string name="pollo">Pollo</string>
+    <string name="mix">Mix</string>
+    <string name="baseRoja">Roja</string>
+    <string name="baseBlanca">Blanca</string>
+    <string name="ingredientePrincipal">Principal ($1500 Carne o Pollo, Mix $2000)</string>
+    <string name="tipoBase">Tipo de base ($500 Roja o Blanca)</string>
+    <string name="receta_principal">Principal</string>
+    <string name="receta_nombre">Nombre de la receta</string>
+    <string name="base">Base</string>
+    <string name="recetaIngredientes">Ingredientes</string>
+    <string name="ingredientes">Seleccione ingredientes ($1000 c/u)</string>
+    <string name="alinios">Seleccione aliños ($500 c/u)</string>
+    <string name="receta_alinios">Aliños</string>
+    <string name="receta_precio">Precio Total</string>
+    <string name="cebolla">Cebolla</string>
+    <string name="champinion">Champiñon</string>
+    <string name="morron">Morron</string>
+    <string name="tomate">Tomate</string>
+    <string name="cherry">Cherry</string>
+    <string name="palta">Palta</string>
+    <string name="ajo">Ajo</string>
+    <string name="albaca">Albaca</string>
+    <string name="oregano">Oregano</string>
+    <string name="guardar">Guardar</string>
+    <string name="volver">Volver</string>
+    <string name="author">By Gabriel Gómez</string>
+</resources>
